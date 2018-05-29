@@ -1,3 +1,3 @@
-module github.com/decred/dcrd/chaincfg
+module github.com/coolsnady/dcrd/chaincfg
 
-require github.com/decred/dcrd/wire v1.0.0
+require github.com/coolsnady/dcrd/wire v1.0.0

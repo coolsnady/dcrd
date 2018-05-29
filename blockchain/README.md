@@ -1,9 +1,9 @@
 blockchain
 ==========
 
-[![Build Status](http://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](http://img.shields.io/travis/coolsnady/hxd.svg)](https://travis-ci.org/coolsnady/hxd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/decred/dcrd/blockchain)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/coolsnady/dcrd/blockchain)
 
 Package blockchain implements Decred block handling and chain selection rules.
 The test coverage is currently only around 60%, but will be increasing over
@@ -15,13 +15,13 @@ There is an associated blog post about the release of this package
 [here](https://blog.conformal.com/btcchain-the-bitcoin-chain-package-from-bctd/).
 
 This package has intentionally been designed so it can be used as a standalone
-package for any projects needing to handle processing of blocks into the decred
+package for any projects needing to handle processing of blocks into the coolsnady
 block chain.
 
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/blockchain
+$ go get -u github.com/coolsnady/dcrd/blockchain
 ```
 
 ## Decred Chain Processing Overview
@@ -61,18 +61,18 @@ is by no means exhaustive:
 
 ## Examples
 
-* [ProcessBlock Example](http://godoc.org/github.com/decred/dcrd/blockchain#example-BlockChain-ProcessBlock)  
+* [ProcessBlock Example](http://godoc.org/github.com/coolsnady/dcrd/blockchain#example-BlockChain-ProcessBlock)  
   Demonstrates how to create a new chain instance and use ProcessBlock to
   attempt to add a block to the chain.  This example intentionally
   attempts to insert a duplicate genesis block to illustrate how an invalid
   block is handled.
 
-* [CompactToBig Example](http://godoc.org/github.com/decred/dcrd/blockchain#example-CompactToBig)  
+* [CompactToBig Example](http://godoc.org/github.com/coolsnady/dcrd/blockchain#example-CompactToBig)  
   Demonstrates how to convert the compact "bits" in a block header which
   represent the target difficulty to a big integer and display it using the
   typical hex notation.
 
-* [BigToCompact Example](http://godoc.org/github.com/decred/dcrd/blockchain#example-BigToCompact)  
+* [BigToCompact Example](http://godoc.org/github.com/coolsnady/dcrd/blockchain#example-BigToCompact)  
   Demonstrates how to convert how to convert a target difficulty into the
   compact "bits" in a block header which represent that target difficulty.
 

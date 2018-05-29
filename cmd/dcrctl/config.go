@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/dcrjson"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/coolsnady/dcrd/dcrutil"
 
 	flags "github.com/jessevdk/go-flags"
 )
@@ -30,7 +30,7 @@ const (
 )
 
 var (
-	dcrdHomeDir            = dcrutil.AppDataDir("dcrd", false)
+	dcrdHomeDir            = dcrutil.AppDataDir("hxd", false)
 	dcrctlHomeDir          = dcrutil.AppDataDir("dcrctl", false)
 	dcrwalletHomeDir       = dcrutil.AppDataDir("dcrwallet", false)
 	defaultConfigFile      = filepath.Join(dcrctlHomeDir, "dcrctl.conf")
@@ -341,17 +341,17 @@ func loadConfig() (*config, []string, error) {
 }
 
 // createDefaultConfig creates a basic config file at the given destination path.
-// For this it tries to read the dcrd config file at its default path, and extract
+// For this it tries to read the hxd config file at its default path, and extract
 // the RPC user and password from it.
 func createDefaultConfigFile(destinationPath string) error {
-	// Nothing to do when there is no existing dcrd conf file at the default
+	// Nothing to do when there is no existing hxd conf file at the default
 	// path to extract the details from.
-	dcrdConfigPath := filepath.Join(dcrdHomeDir, "dcrd.conf")
+	dcrdConfigPath := filepath.Join(dcrdHomeDir, "hxd.conf")
 	if !fileExists(dcrdConfigPath) {
 		return nil
 	}
 
-	// Read dcrd.conf from its default path
+	// Read hxd.conf from its default path
 	dcrdConfigFile, err := os.Open(dcrdConfigPath)
 	if err != nil {
 		return err

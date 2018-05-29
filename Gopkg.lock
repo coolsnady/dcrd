@@ -73,13 +73,13 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/decred/base58"
+  name = "github.com/coolsnady/base58"
   packages = ["."]
   revision = "56c501706f00d9e1cfacee19a27117e12da24734"
 
 [[projects]]
   branch = "master"
-  name = "github.com/decred/slog"
+  name = "github.com/coolsnady/slog"
   packages = ["."]
   revision = "fbd821ef791ba2b8ae945f5d44f4e49396d230c5"
 

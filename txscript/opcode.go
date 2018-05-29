@@ -16,10 +16,10 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainec"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/chaincfg"
+	"github.com/coolsnady/dcrd/chaincfg/chainec"
+	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/coolsnady/dcrd/wire"
 )
 
 var optimizeSigVerification = chaincfg.SigHashOptimization

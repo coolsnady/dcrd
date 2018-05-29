@@ -9,8 +9,8 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/decred/dcrd/dcrec/secp256k1"
-	"github.com/decred/dcrd/dcrec/secp256k1/schnorr"
+	"github.com/coolsnady/dcrd/dcrec/secp256k1"
+	"github.com/coolsnady/dcrd/dcrec/secp256k1/schnorr"
 )
 
 type secSchnorrDSA struct {

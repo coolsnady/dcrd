@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/blockchain/stake"
+	"github.com/coolsnady/dcrd/chaincfg"
+	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/txscript"
+	"github.com/coolsnady/dcrd/wire"
 )
 
 // The number of values to precalculate on initialization of the subsidy

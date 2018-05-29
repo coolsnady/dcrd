@@ -13,12 +13,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/mining"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/blockchain"
+	"github.com/coolsnady/dcrd/chaincfg"
+	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/mining"
+	"github.com/coolsnady/dcrd/wire"
 )
 
 const (

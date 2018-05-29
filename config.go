@@ -22,22 +22,22 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/decred/dcrd/connmgr"
-	"github.com/decred/dcrd/database"
-	_ "github.com/decred/dcrd/database/ffldb"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/mempool"
-	"github.com/decred/dcrd/sampleconfig"
-	"github.com/decred/slog"
+	"github.com/coolsnady/dcrd/connmgr"
+	"github.com/coolsnady/dcrd/database"
+	_ "github.com/coolsnady/dcrd/database/ffldb"
+	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/mempool"
+	"github.com/coolsnady/dcrd/sampleconfig"
+	"github.com/coolsnady/slog"
 	flags "github.com/jessevdk/go-flags"
 )
 
 const (
-	defaultConfigFilename        = "dcrd.conf"
+	defaultConfigFilename        = "hxd.conf"
 	defaultDataDirname           = "data"
 	defaultLogLevel              = "info"
 	defaultLogDirname            = "logs"
-	defaultLogFilename           = "dcrd.log"
+	defaultLogFilename           = "hxd.log"
 	defaultMaxPeers              = 125
 	defaultBanDuration           = time.Hour * 24
 	defaultBanThreshold          = 100
@@ -62,7 +62,7 @@ const (
 )
 
 var (
-	defaultHomeDir     = dcrutil.AppDataDir("dcrd", false)
+	defaultHomeDir     = dcrutil.AppDataDir("hxd", false)
 	defaultConfigFile  = filepath.Join(defaultHomeDir, defaultConfigFilename)
 	defaultDataDir     = filepath.Join(defaultHomeDir, defaultDataDirname)
 	knownDbTypes       = database.SupportedDrivers()
@@ -84,7 +84,7 @@ func minUint32(a, b uint32) uint32 {
 	return b
 }
 
-// config defines the configuration options for dcrd.
+// config defines the configuration options for hxd.
 //
 // See loadConfig for details on the configuration load process.
 type config struct {
@@ -368,7 +368,7 @@ func newConfigParser(cfg *config, so *serviceOptions, options flags.Options) *fl
 	return parser
 }
 
-// createDefaultConfig copies the file sample-dcrd.conf to the given destination path,
+// createDefaultConfig copies the file sample-hxd.conf to the given destination path,
 // and populates it with some randomly generated RPC username and password.
 func createDefaultConfigFile(destPath string) error {
 	// Create the destination directory if it does not exist.
@@ -421,7 +421,7 @@ func createDefaultConfigFile(destPath string) error {
 // 	3) Load configuration file overwriting defaults with any specified options
 // 	4) Parse CLI options and overwrite/add any specified options
 //
-// The above results in dcrd functioning properly without any config settings
+// The above results in hxd functioning properly without any config settings
 // while still allowing the user to override settings with config files and
 // command line options.  Command line options always take precedence.
 func loadConfig() (*config, []string, error) {
@@ -497,7 +497,7 @@ func loadConfig() (*config, []string, error) {
 		os.Exit(0)
 	}
 
-	// Update the home directory for dcrd if specified. Since the home
+	// Update the home directory for hxd if specified. Since the home
 	// directory is updated, other variables need to be updated to
 	// reflect the new changes.
 	if preCfg.HomeDir != "" {

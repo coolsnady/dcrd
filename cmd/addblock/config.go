@@ -10,11 +10,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/database"
-	_ "github.com/decred/dcrd/database/ffldb"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/chaincfg"
+	"github.com/coolsnady/dcrd/database"
+	_ "github.com/coolsnady/dcrd/database/ffldb"
+	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/wire"
 	flags "github.com/jessevdk/go-flags"
 )
 
@@ -25,7 +25,7 @@ const (
 )
 
 var (
-	dcrdHomeDir     = dcrutil.AppDataDir("dcrd", false)
+	dcrdHomeDir     = dcrutil.AppDataDir("hxd", false)
 	defaultDataDir  = filepath.Join(dcrdHomeDir, "data")
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
@@ -35,7 +35,7 @@ var (
 //
 // See loadConfig for details on the configuration load process.
 type config struct {
-	DataDir           string `short:"b" long:"datadir" description:"Location of the dcrd data directory"`
+	DataDir           string `short:"b" long:"datadir" description:"Location of the hxd data directory"`
 	DbType            string `long:"dbtype" description:"Database backend to use for the Block Chain"`
 	TestNet           bool   `long:"testnet" description:"Use the test network"`
 	SimNet            bool   `long:"simnet" description:"Use the simulation test network"`
@@ -68,7 +68,7 @@ func validDbType(dbType string) bool {
 }
 
 // netName returns the name used when referring to a bitcoin network.  At the
-// time of writing, dcrd currently places blocks for testnet version 2 in the
+// time of writing, hxd currently places blocks for testnet version 2 in the
 // data and log directory "testnet2", which does not match the Name field of the
 // chaincfg parameters.  This function can be used to override this directory name
 // as "testnet2" when the passed active network matches wire.TestNet2.

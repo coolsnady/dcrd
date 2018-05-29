@@ -21,11 +21,11 @@ package blockcf
 import (
 	"encoding/binary"
 
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/gcs"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/blockchain/stake"
+	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/coolsnady/dcrd/gcs"
+	"github.com/coolsnady/dcrd/txscript"
+	"github.com/coolsnady/dcrd/wire"
 )
 
 // P is the collision probability used for block committed filters (2^-20)

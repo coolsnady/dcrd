@@ -1,9 +1,9 @@
 hdkeychain
 ==========
 
-[![Build Status](http://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](http://img.shields.io/travis/coolsnady/hxd.svg)](https://travis-ci.org/coolsnady/hxd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/decred/dcrd/hdkeychain)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/coolsnady/dcrd/hdkeychain)
 
 Package hdkeychain provides an API for Decred hierarchical deterministic
 extended keys (based on BIP0032).
@@ -23,7 +23,7 @@ report.
 - Easy serialization and deserialization for both private and public extended
   keys
 - Support for custom networks by registering them with chaincfg
-- Obtaining the underlying EC pubkeys, EC privkeys, and associated decred
+- Obtaining the underlying EC pubkeys, EC privkeys, and associated coolsnady
   addresses ties in seamlessly with existing btcec and dcrutil types which
   provide powerful tools for working with them to do things like sign
   transations and generate payment scripts
@@ -39,18 +39,18 @@ report.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/hdkeychain
+$ go get -u github.com/coolsnady/dcrd/hdkeychain
 ```
 
 ## Examples
 
-* [NewMaster Example](http://godoc.org/github.com/decred/dcrd/hdkeychain#example-NewMaster)
+* [NewMaster Example](http://godoc.org/github.com/coolsnady/dcrd/hdkeychain#example-NewMaster)
   Demonstrates how to generate a cryptographically random seed then use it to
   create a new master node (extended key).
-* [Default Wallet Layout Example](http://godoc.org/github.com/decred/dcrd/hdkeychain#example-package--DefaultWalletLayout)
+* [Default Wallet Layout Example](http://godoc.org/github.com/coolsnady/dcrd/hdkeychain#example-package--DefaultWalletLayout)
   Demonstrates the default hierarchical deterministic wallet layout as described
   in BIP0032.
-* [Audits Use Case Example](http://godoc.org/github.com/decred/dcrd/hdkeychain#example-package--Audits)
+* [Audits Use Case Example](http://godoc.org/github.com/coolsnady/dcrd/hdkeychain#example-package--Audits)
   Demonstrates the audits use case in BIP0032.
 
 ## License

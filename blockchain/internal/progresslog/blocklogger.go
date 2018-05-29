@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/decred/slog"
+	"github.com/coolsnady/slog"
 
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
+	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/coolsnady/dcrd/wire"
 )
 
 // BlockProgressLogger provides periodic logging for other services in order

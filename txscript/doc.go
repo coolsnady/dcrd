@@ -7,7 +7,7 @@
 Package txscript implements the Decred transaction script language.
 
 This package provides data structures and functions to parse and execute
-decred transaction scripts.
+coolsnady transaction scripts.
 
 Script Overview
 

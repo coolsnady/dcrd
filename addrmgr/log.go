@@ -6,7 +6,7 @@
 package addrmgr
 
 import (
-	"github.com/decred/slog"
+	"github.com/coolsnady/slog"
 )
 
 // log is a logger that is initialized with no output filters.  This

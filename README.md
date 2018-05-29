@@ -1,27 +1,27 @@
-dcrd
+hxd
 ====
 
-[![Build Status](https://travis-ci.org/decred/dcrd.png?branch=master)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://travis-ci.org/coolsnady/hxd.png?branch=master)](https://travis-ci.org/coolsnady/hxd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/decred/dcrd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/coolsnady/hxd)
 
-dcrd is a Decred full node implementation written in Go (golang).
+hxd is a Decred full node implementation written in Go (golang).
 
-This acts as a chain daemon for the [Decred](https://decred.org) cryptocurrency.
-dcrd maintains the entire past transactional ledger of Decred and allows
+This acts as a chain daemon for the [Decred](https://coolsnady.org) cryptocurrency.
+hxd maintains the entire past transactional ledger of Decred and allows
  relaying of transactions to other Decred nodes across the world.  To read more
 about Decred please see the
-[project documentation](https://docs.decred.org/#overview).
+[project documentation](https://docs.coolsnady.org/#overview).
 
 Note: To send or receive funds and join Proof-of-Stake mining, you will also need
-[dcrwallet](https://github.com/decred/dcrwallet).
+[dcrwallet](https://github.com/coolsnady/dcrwallet).
 
 This project is currently under active development and is in a Beta state.  It
 is extremely stable and has been in production use since February 2016.
 
 It is forked from [btcd](https://github.com/btcsuite/btcd) which is a bitcoin
 full node implementation written in Go.  btcd is a ongoing project under active
-development.  Because dcrd is constantly synced with btcd codebase, it will
+development.  Because hxd is constantly synced with btcd codebase, it will
 get the benefit of btcd's ongoing upgrades to peer and connection handling,
 database optimization and other blockchain related technology improvements.
 
@@ -31,7 +31,7 @@ database optimization and other blockchain related technology improvements.
 
 ## Getting Started
 
-- dcrd (and utilities) will now be installed in either ```$GOROOT/bin``` or
+- hxd (and utilities) will now be installed in either ```$GOROOT/bin``` or
   ```$GOPATH/bin``` depending on your configuration.  If you did not already
   add the bin directory to your system path during Go installation, we
   recommend you do so now.
@@ -63,8 +63,8 @@ For a first time installation, the project and dependency sources can be
 obtained manually with `git` and `dep` (create directories as needed):
 
 ```
-git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-cd $GOPATH/src/github.com/decred/dcrd
+git clone https://github.com/coolsnady/hxd $GOPATH/src/github.com/coolsnady/hxd
+cd $GOPATH/src/github.com/coolsnady/hxd
 dep ensure
 go install . ./cmd/...
 ```
@@ -73,14 +73,14 @@ To update an existing source tree, pull the latest changes and install the
 matching dependencies:
 
 ```
-cd $GOPATH/src/github.com/decred/dcrd
+cd $GOPATH/src/github.com/coolsnady/hxd
 git pull
 dep ensure
 go install . ./cmd/...
 ```
 
 For more information about Decred and how to set up your software please go to
-our docs page at [docs.decred.org](https://docs.decred.org/getting-started/beginner-guide/).
+our docs page at [docs.coolsnady.org](https://docs.coolsnady.org/getting-started/beginner-guide/).
 
 ## Docker
 
@@ -104,21 +104,21 @@ To run the tests locally without docker:
 
 If you have any further questions you can find us at:
 
-- irc.freenode.net (channel #decred)
-- [webchat](https://webchat.freenode.net/?channels=decred)
-- forum.decred.org
-- decred.slack.com
+- irc.freenode.net (channel #coolsnady)
+- [webchat](https://webchat.freenode.net/?channels=coolsnady)
+- forum.coolsnady.org
+- coolsnady.slack.com
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/decred/dcrd/issues)
+The [integrated github issue tracker](https://github.com/coolsnady/dcrd/issues)
 is used for this project.
 
 ## Documentation
 
 The documentation is a work-in-progress.  It is located in the
-[docs](https://github.com/decred/dcrd/tree/master/docs) folder.
+[docs](https://github.com/coolsnady/dcrd/tree/master/docs) folder.
 
 ## License
 
-dcrd is licensed under the [copyfree](http://copyfree.org) ISC License.
+hxd is licensed under the [copyfree](http://copyfree.org) ISC License.

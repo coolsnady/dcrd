@@ -1,6 +1,6 @@
-module github.com/decred/dcrd/addrmgr
+module github.com/coolsnady/dcrd/addrmgr
 
 require (
-	github.com/decred/dcrd/wire v1.0.0
-	github.com/decred/slog v1.0.0
+	github.com/coolsnady/dcrd/wire v1.0.0
+	github.com/coolsnady/slog v1.0.0
 )

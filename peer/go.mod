@@ -1,3 +1,3 @@
-module github.com/decred/dcrd/peer
+module github.com/coolsnady/dcrd/peer
 
-require github.com/decred/dcrd v1.3.0
+require github.com/coolsnady/hxd v1.3.0

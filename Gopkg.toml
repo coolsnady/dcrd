@@ -25,10 +25,10 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/decred/base58"
+  name = "github.com/coolsnady/base58"
 
 [[constraint]]
-  name = "github.com/decred/slog"
+  name = "github.com/coolsnady/slog"
   version = "1.0.0"
 
 [[constraint]]
