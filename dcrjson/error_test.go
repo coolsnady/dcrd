@@ -8,7 +8,7 @@ package dcrjson_test
 import (
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

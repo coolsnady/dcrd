@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // TestBlock tests the API for Block.

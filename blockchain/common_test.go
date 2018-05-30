@@ -12,13 +12,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain/stake"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/database"
-	_ "github.com/coolsnady/dcrd/database/ffldb"
-	"github.com/coolsnady/dcrd/txscript"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/blockchain/stake"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/database"
+	_ "github.com/hunjixin/dcrd/database/ffldb"
+	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 const (

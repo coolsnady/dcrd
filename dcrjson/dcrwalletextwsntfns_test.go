@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestChainSvrWsNtfns tests all of the chain server websocket-specific

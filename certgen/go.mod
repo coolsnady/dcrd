@@ -1,1 +1,1 @@
-module github.com/coolsnady/dcrd/certgen
+module github.com/hunjixin/dcrd/certgen

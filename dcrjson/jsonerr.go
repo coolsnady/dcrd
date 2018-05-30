@@ -69,11 +69,11 @@ var (
 var (
 	ErrClientNotConnected = Error{
 		Code:    -9,
-		Message: "hxd is not connected",
+		Message: "hxd2 is not connected",
 	}
 	ErrClientInInitialDownload = Error{
 		Code:    -10,
-		Message: "hxd is downloading blocks...",
+		Message: "hxd2 is downloading blocks...",
 	}
 )
 
@@ -163,7 +163,7 @@ var (
 	}
 )
 
-// Errors that are specific to hxd.
+// Errors that are specific to hxd2.
 var (
 	ErrNoWallet = Error{
 		Code:    -1,

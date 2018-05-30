@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestChainSvrWsCmds tests all of the chain server websocket-specific commands

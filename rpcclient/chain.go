@@ -11,12 +11,12 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrjson"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/gcs"
-	"github.com/coolsnady/dcrd/gcs/blockcf"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/gcs"
+	"github.com/hunjixin/dcrd/gcs/blockcf"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // FutureGetBestBlockHashResult is a future promise to deliver the result of a

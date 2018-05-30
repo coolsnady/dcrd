@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestIsValidIDType ensures the IsValidIDType function behaves as expected.

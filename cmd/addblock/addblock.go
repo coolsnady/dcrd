@@ -10,15 +10,15 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/coolsnady/dcrd/blockchain"
-	"github.com/coolsnady/dcrd/blockchain/indexers"
-	"github.com/coolsnady/dcrd/database"
-	"github.com/coolsnady/dcrd/limits"
-	"github.com/coolsnady/slog"
+	"github.com/hunjixin/dcrd/blockchain"
+	"github.com/hunjixin/dcrd/blockchain/indexers"
+	"github.com/hunjixin/dcrd/database"
+	"github.com/hunjixin/dcrd/limits"
+	"github.com/hunjixin/slog"
 )
 
 const (
-	// blockDbNamePrefix is the prefix for the hxd block database.
+	// blockDbNamePrefix is the prefix for the hxd2 block database.
 	blockDbNamePrefix = "blocks"
 )
 

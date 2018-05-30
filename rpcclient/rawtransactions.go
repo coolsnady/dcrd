@@ -10,10 +10,10 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrjson"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // SigHashType enumerates the available signature hashing types that the

@@ -13,8 +13,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -474,9 +474,9 @@ var MainNetParams = Params{
 	Net:         wire.MainNet,
 	DefaultPort: "9108",
 	DNSSeeds: []DNSSeed{
-		{"mainnet-seed.coolsnady.mindcry.org", true},
-		{"mainnet-seed.coolsnady.netpurgatory.com", true},
-		{"mainnet-seed.coolsnady.org", true},
+		{"mainnet-seed.hunjixin.mindcry.org", true},
+		{"mainnet-seed.hunjixin.netpurgatory.com", true},
+		{"mainnet-seed.hunjixin.org", true},
 	},
 
 	// Chain parameters
@@ -684,9 +684,9 @@ var TestNet2Params = Params{
 	Net:         wire.TestNet2,
 	DefaultPort: "19108",
 	DNSSeeds: []DNSSeed{
-		{"testnet-seed.coolsnady.mindcry.org", true},
-		{"testnet-seed.coolsnady.netpurgatory.com", true},
-		{"testnet-seed.coolsnady.org", true},
+		{"testnet-seed.hunjixin.mindcry.org", true},
+		{"testnet-seed.hunjixin.netpurgatory.com", true},
+		{"testnet-seed.hunjixin.org", true},
 	},
 
 	// Chain parameters

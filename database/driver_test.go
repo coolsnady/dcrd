@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/coolsnady/dcrd/database"
-	_ "github.com/coolsnady/dcrd/database/ffldb"
+	"github.com/hunjixin/dcrd/database"
+	_ "github.com/hunjixin/dcrd/database/ffldb"
 )
 
 var (

@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain"
-	"github.com/coolsnady/dcrd/blockchain/stake"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/txscript"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/blockchain"
+	"github.com/hunjixin/dcrd/blockchain/stake"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 const (

@@ -11,7 +11,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
 )
 
 const (

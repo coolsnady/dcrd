@@ -1,7 +1,7 @@
-hxd Websockets Example
+hxd2 Websockets Example
 =======================
 
-This example shows how to use the rpcclient package to connect to a hxd RPC
+This example shows how to use the rpcclient package to connect to a hxd2 RPC
 server using TLS-secured websockets, register for block connected and block
 disconnected notifications, and get the current block count.
 
@@ -13,7 +13,7 @@ demonstrate clean shutdown.
 The first step is to use `go get` to download and install the rpcclient package:
 
 ```bash
-$ go get -u github.com/coolsnady/dcrd/rpcclient
+$ go get -u github.com/hunjixin/dcrd/rpcclient
 ```
 
 Next, modify the `main.go` source to specify the correct RPC username and
@@ -27,7 +27,7 @@ password for the RPC server:
 Finally, navigate to the example's directory and run it with:
 
 ```bash
-$ cd $GOPATH/src/github.com/coolsnady/dcrd/rpcclient/examples/dcrdwebsockets
+$ cd $GOPATH/src/github.com/hunjixin/dcrd/rpcclient/examples/dcrdwebsockets
 $ go run *.go
 ```
 

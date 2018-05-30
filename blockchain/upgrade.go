@@ -12,13 +12,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain/internal/progresslog"
-	"github.com/coolsnady/dcrd/blockchain/stake"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/database"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/blockchain/internal/progresslog"
+	"github.com/hunjixin/dcrd/blockchain/stake"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/database"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // errInterruptRequested indicates that an operation was cancelled due

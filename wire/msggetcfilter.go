@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
 )
 
 // MsgGetCFilter implements the Message interface and represents a getcfilter

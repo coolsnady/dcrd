@@ -20,8 +20,8 @@ set -ex
 
 #Default GOVERSION
 GOVERSION=${1:-1.10}
-REPO=hxd
-DOCKER_IMAGE_TAG=coolsnady-golang-builder-$GOVERSION
+REPO=hxd2
+DOCKER_IMAGE_TAG=hunjixin-golang-builder-$GOVERSION
 
 testrepo () {
   TMPFILE=$(mktemp)
@@ -84,22 +84,22 @@ if [ -f ~/.cache/$DOCKER_IMAGE_TAG.tar ]; then
 	fi
 else
 	# pull and save image to cache 
-	docker pull coolsnady/$DOCKER_IMAGE_TAG
+	docker pull hunjixin/$DOCKER_IMAGE_TAG
 	if [ $? != 0 ]; then
 		echo 'docker pull failed'
 		exit 1
 	fi
-	docker save coolsnady/$DOCKER_IMAGE_TAG > ~/.cache/$DOCKER_IMAGE_TAG.tar
+	docker save hunjixin/$DOCKER_IMAGE_TAG > ~/.cache/$DOCKER_IMAGE_TAG.tar
 	if [ $? != 0 ]; then
 		echo 'docker save failed'
 		exit 1
 	fi
 fi
 
-docker run --rm -it -v $(pwd):/src coolsnady/$DOCKER_IMAGE_TAG /bin/bash -c "\
+docker run --rm -it -v $(pwd):/src hunjixin/$DOCKER_IMAGE_TAG /bin/bash -c "\
   rsync -ra --filter=':- .gitignore'  \
-  /src/ /go/src/github.com/coolsnady/$REPO/ && \
-  cd github.com/coolsnady/$REPO/ && \
+  /src/ /go/src/github.com/hunjixin/$REPO/ && \
+  cd github.com/hunjixin/$REPO/ && \
   bash run_tests.sh local"
 if [ $? != 0 ]; then
 	echo 'docker run failed'

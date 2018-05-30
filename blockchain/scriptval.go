@@ -10,9 +10,9 @@ import (
 	"math"
 	"runtime"
 
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/txscript"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // txValidateItem holds a transaction along with which input to validate.

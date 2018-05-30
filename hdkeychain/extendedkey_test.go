@@ -16,8 +16,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/hdkeychain"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/hdkeychain"
 )
 
 // TestBIP0032Vectors tests the vectors provided by [BIP32] to ensure the

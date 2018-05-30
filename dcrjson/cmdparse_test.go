@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestAssignField tests the assignField function handles supported combinations

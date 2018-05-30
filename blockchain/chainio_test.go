@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain/stake"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/database"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/blockchain/stake"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/database"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // newHashFromStr converts the passed big-endian hex string into a

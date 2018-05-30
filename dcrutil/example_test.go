@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/dcrutil"
 )
 
 func ExampleAmount() {

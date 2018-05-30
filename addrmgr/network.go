@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 var (

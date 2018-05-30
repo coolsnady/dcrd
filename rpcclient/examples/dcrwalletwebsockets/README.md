@@ -14,7 +14,7 @@ demonstrate clean shutdown.
 The first step is to use `go get` to download and install the rpcclient package:
 
 ```bash
-$ go get -u github.com/coolsnady/dcrd/rpcclient
+$ go get -u github.com/hunjixin/dcrd/rpcclient
 ```
 
 Next, modify the `main.go` source to specify the correct RPC username and
@@ -28,7 +28,7 @@ password for the RPC server:
 Finally, navigate to the example's directory and run it with:
 
 ```bash
-$ cd $GOPATH/src/github.com/coolsnady/dcrd/rpcclient/examples/dcrwalletwebsockets
+$ cd $GOPATH/src/github.com/hunjixin/dcrd/rpcclient/examples/dcrwalletwebsockets
 $ go run *.go
 ```
 

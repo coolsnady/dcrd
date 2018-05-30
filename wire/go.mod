@@ -1,3 +1,3 @@
-module github.com/coolsnady/dcrd/wire
+module github.com/hunjixin/dcrd/wire
 
-require github.com/coolsnady/dcrd/chaincfg/chainhash v1.0.0
+require github.com/hunjixin/dcrd/chaincfg/chainhash v1.0.0

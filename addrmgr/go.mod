@@ -1,6 +1,6 @@
-module github.com/coolsnady/dcrd/addrmgr
+module github.com/hunjixin/dcrd/addrmgr
 
 require (
-	github.com/coolsnady/dcrd/wire v1.0.0
-	github.com/coolsnady/slog v1.0.0
+	github.com/hunjixin/dcrd/wire v1.0.0
+	github.com/hunjixin/slog v1.0.0
 )

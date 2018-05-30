@@ -19,12 +19,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/coolsnady/base58"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainec"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrec/secp256k1"
-	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/decred/base58"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainec"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrec/secp256k1"
+	"github.com/hunjixin/dcrd/dcrutil"
 )
 
 const (

@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // naTest is used to describe a test to be performed against the NetAddressKey

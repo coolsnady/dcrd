@@ -1,12 +1,12 @@
 sampleconfig
 ============
 
-[![Build Status](http://img.shields.io/travis/coolsnady/hxd.svg)](https://travis-ci.org/coolsnady/hxd)
+[![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/coolsnady/dcrd/sampleconfig)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/sampleconfig)
 
 Package sampleconfig provides a single constant that contains the contents of
-the sample configuration file for hxd.  This is provided for tools that perform
+the sample configuration file for hxd2.  This is provided for tools that perform
 automatic configuration and would like to ensure the generated configuration
 file not only includes the specifically configured values, but also provides
 samples of other configuration options.
@@ -14,7 +14,7 @@ samples of other configuration options.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/coolsnady/dcrd/sampleconfig
+$ go get -u github.com/hunjixin/dcrd/sampleconfig
 ```
 
 ## License

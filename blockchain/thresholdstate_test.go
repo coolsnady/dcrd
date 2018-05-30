@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain/chaingen"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/blockchain/chaingen"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/dcrutil"
 )
 
 const (

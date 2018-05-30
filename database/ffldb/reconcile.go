@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/coolsnady/dcrd/database"
+	"github.com/hunjixin/dcrd/database"
 )
 
 // The serialized write cursor location format is:

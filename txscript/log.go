@@ -6,7 +6,7 @@
 package txscript
 
 import (
-	"github.com/coolsnady/slog"
+	"github.com/hunjixin/slog"
 )
 
 // log is a logger that is initialized with no output filters.  This

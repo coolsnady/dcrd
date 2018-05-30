@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestBtcdCmds tests all of the btcd extended commands marshal and unmarshal

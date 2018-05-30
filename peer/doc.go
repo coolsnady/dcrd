@@ -17,7 +17,7 @@ Payment Verification (SPV) nodes, proxies, etc.
 
 A quick overview of the major features peer provides are as follows:
 
- - Provides a basic concurrent safe Decred peer for handling coolsnady
+ - Provides a basic concurrent safe Decred peer for handling hunjixin
    communications via the peer-to-peer protocol
  - Full duplex reading and writing of Decred protocol messages
  - Automatic handling of the initial handshake process including protocol
@@ -50,8 +50,8 @@ A quick overview of the major features peer provides are as follows:
 Peer Configuration
 
 All peer configuration is handled with the Config struct.  This allows the
-caller to specify things such as the user agent name and version, the coolsnady
-network to use, which services it supports, and callbacks to invoke when coolsnady
+caller to specify things such as the user agent name and version, the hunjixin
+network to use, which services it supports, and callbacks to invoke when hunjixin
 messages are received.  See the documentation for each field of the Config
 struct for more details.
 
@@ -72,12 +72,12 @@ cleanup has completed.
 
 Callbacks
 
-In order to do anything useful with a peer, it is necessary to react to coolsnady
+In order to do anything useful with a peer, it is necessary to react to hunjixin
 messages.  This is accomplished by creating an instance of the MessageListeners
 struct with the callbacks to be invoke specified and setting the Listeners field
 of the Config struct specified when creating a peer to it.
 
-For convenience, a callback hook for all of the currently supported coolsnady
+For convenience, a callback hook for all of the currently supported hunjixin
 messages is exposed which receives the peer instance and the concrete message
 type.  In addition, a hook for OnRead is provided so even custom messages types
 for which this package does not directly provide a hook, as long as they
@@ -142,6 +142,6 @@ raw message bytes using a format similar to hexdump -C.
 Improvement Proposals
 
 This package supports all improvement proposals supported by the wire package.
-(https://godoc.org/github.com/coolsnady/dcrd/wire#hdr-Bitcoin_Improvement_Proposals)
+(https://godoc.org/github.com/hunjixin/dcrd/wire#hdr-Bitcoin_Improvement_Proposals)
 */
 package peer

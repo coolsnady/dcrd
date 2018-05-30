@@ -1,3 +1,3 @@
-module github.com/coolsnady/dcrd/mempool
+module github.com/hunjixin/dcrd/mempool
 
-require github.com/coolsnady/hxd v1.3.0
+require github.com/hunjixin/hxd2 v1.3.0

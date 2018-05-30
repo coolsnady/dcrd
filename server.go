@@ -19,21 +19,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coolsnady/dcrd/addrmgr"
-	"github.com/coolsnady/dcrd/blockchain"
-	"github.com/coolsnady/dcrd/blockchain/indexers"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/connmgr"
-	"github.com/coolsnady/dcrd/database"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/gcs"
-	"github.com/coolsnady/dcrd/gcs/blockcf"
-	"github.com/coolsnady/dcrd/mempool"
-	"github.com/coolsnady/dcrd/mining"
-	"github.com/coolsnady/dcrd/peer"
-	"github.com/coolsnady/dcrd/txscript"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/addrmgr"
+	"github.com/hunjixin/dcrd/blockchain"
+	"github.com/hunjixin/dcrd/blockchain/indexers"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/connmgr"
+	"github.com/hunjixin/dcrd/database"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/gcs"
+	"github.com/hunjixin/dcrd/gcs/blockcf"
+	"github.com/hunjixin/dcrd/mempool"
+	"github.com/hunjixin/dcrd/mining"
+	"github.com/hunjixin/dcrd/peer"
+	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 const (
@@ -61,7 +61,7 @@ const (
 var (
 	// userAgentName is the user agent name and is used to help identify
 	// ourselves to other Decred peers.
-	userAgentName = "hxd"
+	userAgentName = "hxd2"
 
 	// userAgentVersion is the user agent version and is used to help
 	// identify ourselves to other peers.
@@ -2254,7 +2254,7 @@ out:
 			// listen port?
 			// XXX this assumes timeout is in seconds.
 			listenPort, err := s.nat.AddPortMapping("tcp", int(lport), int(lport),
-				"hxd listen port", 20*60)
+				"hxd2 listen port", 20*60)
 			if err != nil {
 				srvrLog.Warnf("can't add UPnP port mapping: %v", err)
 			}
@@ -2314,7 +2314,7 @@ func standardScriptVerifyFlags(chain *blockchain.BlockChain) (txscript.ScriptFla
 	return scriptFlags, nil
 }
 
-// newServer returns a new hxd server configured to listen on addr for the
+// newServer returns a new hxd2 server configured to listen on addr for the
 // Decred network type specified by chainParams.  Use start to begin accepting
 // connections from peers.
 func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Params, interrupt <-chan struct{}) (*server, error) {

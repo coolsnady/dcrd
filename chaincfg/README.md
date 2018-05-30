@@ -1,15 +1,15 @@
 chaincfg
 ========
 
-[![Build Status](http://img.shields.io/travis/coolsnady/hxd.svg)](https://travis-ci.org/coolsnady/hxd)
+[![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/coolsnady/dcrd/chaincfg)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the three standard
 Decred networks and provides the ability for callers to define their own custom
 Decred networks.
 
-Although this package was primarily written for hxd, it has intentionally been
+Although this package was primarily written for hxd2, it has intentionally been
 designed so it can be used as a standalone package for any projects needing to
 use parameters for the standard Decred networks or for projects needing to
 define their own network.
@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/chaincfg"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Decred network")
@@ -56,7 +56,7 @@ func main() {
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/coolsnady/dcrd/chaincfg
+$ go get -u github.com/hunjixin/dcrd/chaincfg
 ```
 
 ## License

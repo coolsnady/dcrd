@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/slog"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/slog"
 )
 
 // blockProgressLogger provides periodic logging for other services in order

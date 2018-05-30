@@ -8,8 +8,8 @@ package main
 import (
 	"time"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/database"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/database"
 )
 
 // headersCmd defines the configuration options for the loadheaders command.

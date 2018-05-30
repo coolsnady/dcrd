@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainec"
-	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainec"
+	"github.com/hunjixin/dcrd/dcrutil"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

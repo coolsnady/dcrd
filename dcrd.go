@@ -15,17 +15,17 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/coolsnady/dcrd/blockchain/indexers"
-	"github.com/coolsnady/dcrd/limits"
+	"github.com/hunjixin/dcrd/blockchain/indexers"
+	"github.com/hunjixin/dcrd/limits"
 )
 
 var cfg *config
 
-// winServiceMain is only invoked on Windows.  It detects when hxd is running
+// winServiceMain is only invoked on Windows.  It detects when hxd2 is running
 // as a service and reacts accordingly.
 var winServiceMain func() (bool, error)
 
-// dcrdMain is the real main function for hxd.  It is necessary to work around
+// dcrdMain is the real main function for hxd2.  It is necessary to work around
 // the fact that deferred functions do not run when os.Exit() is called.  The
 // optional serverChan parameter is mainly used by the service code to be
 // notified with the server once it is setup so it can gracefully stop it when

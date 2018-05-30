@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/coolsnady/dcrd/dcrutil"
-//          "github.com/coolsnady/dcrd/chaincfg"
+//          "github.com/hunjixin/dcrd/dcrutil"
+//          "github.com/hunjixin/dcrd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Decred network")

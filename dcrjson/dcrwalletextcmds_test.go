@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // TestDcrWalletExtCmds tests all of the btcwallet extended commands marshal and

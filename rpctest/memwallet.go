@@ -11,15 +11,15 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/coolsnady/dcrd/blockchain"
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrec/secp256k1"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/hdkeychain"
-	"github.com/coolsnady/dcrd/rpcclient"
-	"github.com/coolsnady/dcrd/txscript"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/blockchain"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrec/secp256k1"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/hdkeychain"
+	"github.com/hunjixin/dcrd/rpcclient"
+	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 var (
@@ -170,7 +170,7 @@ func (m *memWallet) SyncedHeight() int64 {
 	return m.currentHeight
 }
 
-// SetRPCClient saves the passed rpc connection to hxd as the wallet's
+// SetRPCClient saves the passed rpc connection to hxd2 as the wallet's
 // personal rpc connection.
 func (m *memWallet) SetRPCClient(rpcClient *rpcclient.Client) {
 	m.rpc = rpcClient

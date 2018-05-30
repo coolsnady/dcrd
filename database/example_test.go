@@ -11,11 +11,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/database"
-	_ "github.com/coolsnady/dcrd/database/ffldb"
-	"github.com/coolsnady/dcrd/dcrutil"
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/database"
+	_ "github.com/hunjixin/dcrd/database/ffldb"
+	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // This example demonstrates creating a new database.
@@ -23,8 +23,8 @@ func ExampleCreate() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/coolsnady/dcrd/database2"
-	// 	_ "github.com/coolsnady/dcrd/database/ffldb"
+	// 	"github.com/hunjixin/dcrd/database2"
+	// 	_ "github.com/hunjixin/dcrd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -49,8 +49,8 @@ func Example_basicUsage() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/coolsnady/dcrd/database2"
-	// 	_ "github.com/coolsnady/dcrd/database/ffldb"
+	// 	"github.com/hunjixin/dcrd/database2"
+	// 	_ "github.com/hunjixin/dcrd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -115,8 +115,8 @@ func Example_blockStorageAndRetrieval() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/coolsnady/dcrd/database2"
-	// 	_ "github.com/coolsnady/dcrd/database/ffldb"
+	// 	"github.com/hunjixin/dcrd/database2"
+	// 	_ "github.com/hunjixin/dcrd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.

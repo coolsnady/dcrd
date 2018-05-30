@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
 )
 
 // Calculate the hash of hasher over buf.

@@ -9,10 +9,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/coolsnady/dcrd/chaincfg"
-	"github.com/coolsnady/dcrd/chaincfg/chainec"
-	"github.com/coolsnady/dcrd/chaincfg/chainhash"
-	"github.com/coolsnady/dcrd/dcrutil"
+	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/dcrd/chaincfg/chainec"
+	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/dcrd/dcrutil"
 )
 
 const (
@@ -1357,7 +1357,7 @@ type AtomicSwapDataPushes struct {
 // ExtractAtomicSwapDataPushes returns (nil, nil).  Non-nil errors are returned
 // for unparsable scripts.
 //
-// NOTE: Atomic swaps are not considered standard script types by the hxd
+// NOTE: Atomic swaps are not considered standard script types by the hxd2
 // mempool policy and should be used with P2SH.  The atomic swap format is also
 // expected to change to use a more secure hash function in the future.
 //

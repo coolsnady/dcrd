@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/coolsnady/dcrd/wire"
+	"github.com/hunjixin/dcrd/wire"
 )
 
 // lruInventoryCache provides a concurrency safe cache that is limited to a maximum

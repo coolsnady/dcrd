@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/coolsnady/dcrd/dcrjson"
+	"github.com/hunjixin/dcrd/dcrjson"
 )
 
 // nodeHeightSorter implements sort.Interface to allow a slice of nodes to

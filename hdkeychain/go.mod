@@ -1,3 +1,3 @@
-module github.com/coolsnady/dcrd/hdkeychain
+module github.com/hunjixin/dcrd/hdkeychain
 
-require github.com/coolsnady/hxd v1.3.0
+require github.com/hunjixin/hxd2 v1.3.0

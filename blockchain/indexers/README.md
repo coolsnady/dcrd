@@ -1,9 +1,9 @@
 indexers
 ========
 
-[![Build Status](https://travis-ci.org/coolsnady/hxd.png?branch=master)](https://travis-ci.org/coolsnady/hxd)
+[![Build Status](https://travis-ci.org/hunjixin/hxd2.png?branch=master)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/coolsnady/dcrd/blockchain/indexers?status.png)](http://godoc.org/github.com/coolsnady/dcrd/blockchain/indexers)
+[![GoDoc](https://godoc.org/github.com/hunjixin/dcrd/blockchain/indexers?status.png)](http://godoc.org/github.com/hunjixin/dcrd/blockchain/indexers)
 
 Package indexers implements optional block chain indexes.
 
@@ -30,7 +30,7 @@ via an RPC interface.
 ## Installation
 
 ```bash
-$ go get -u github.com/coolsnady/dcrd/blockchain/indexers
+$ go get -u github.com/hunjixin/dcrd/blockchain/indexers
 ```
 
 ## License
