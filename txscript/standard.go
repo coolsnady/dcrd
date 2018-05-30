@@ -9,10 +9,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainec"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainec"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 const (

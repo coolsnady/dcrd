@@ -13,12 +13,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hunjixin/dcrd/blockchain"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/mining"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/mining"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (

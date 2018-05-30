@@ -22,13 +22,13 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/hunjixin/dcrd/connmgr"
-	"github.com/hunjixin/dcrd/database"
-	_ "github.com/hunjixin/dcrd/database/ffldb"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/mempool"
-	"github.com/hunjixin/dcrd/sampleconfig"
-	"github.com/hunjixin/slog"
+	"github.com/decred/slog"
+	"github.com/hunjixin/hxd2/connmgr"
+	"github.com/hunjixin/hxd2/database"
+	_ "github.com/hunjixin/hxd2/database/ffldb"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/mempool"
+	"github.com/hunjixin/hxd2/sampleconfig"
 	flags "github.com/jessevdk/go-flags"
 )
 
@@ -1121,7 +1121,7 @@ func loadConfig() (*config, []string, error) {
 	// Warn if old testnet directory is present.
 	for _, oldDir := range oldTestNets {
 		if fileExists(oldDir) {
-			dcrdLog.Warnf("Block chain data from previous testnet"+
+			hxd2Log.Warnf("Block chain data from previous testnet"+
 				" found (%v) and can probably be removed.",
 				oldDir)
 		}
@@ -1131,32 +1131,32 @@ func loadConfig() (*config, []string, error) {
 	// done.  This prevents the warning on help messages and invalid
 	// options.  Note this should go directly before the return.
 	if configFileError != nil {
-		dcrdLog.Warnf("%v", configFileError)
+		hxd2Log.Warnf("%v", configFileError)
 	}
 
 	return &cfg, remainingArgs, nil
 }
 
-// dcrdDial connects to the address on the named network using the appropriate
+// hxd2Dial connects to the address on the named network using the appropriate
 // dial function depending on the address and configuration options.  For
 // example, .onion addresses will be dialed using the onion specific proxy if
 // one was specified, but will otherwise use the normal dial function (which
 // could itself use a proxy or not).
-func dcrdDial(network, addr string) (net.Conn, error) {
+func hxd2Dial(network, addr string) (net.Conn, error) {
 	if strings.Contains(addr, ".onion:") {
 		return cfg.oniondial(network, addr)
 	}
 	return cfg.dial(network, addr)
 }
 
-// dcrdLookup returns the correct DNS lookup function to use depending on the
+// hxd2Lookup returns the correct DNS lookup function to use depending on the
 // passed host and configuration options.  For example, .onion addresses will be
 // resolved using the onion specific proxy if one was specified, but will
 // otherwise treat the normal proxy as tor unless --noonion was specified in
 // which case the lookup will fail.  Meanwhile, normal IP addresses will be
 // resolved using tor if a proxy was specified unless --noonion was also
 // specified in which case the normal system DNS resolver will be used.
-func dcrdLookup(host string) ([]net.IP, error) {
+func hxd2Lookup(host string) ([]net.IP, error) {
 	if strings.HasSuffix(host, ".onion") {
 		return cfg.onionlookup(host)
 	}

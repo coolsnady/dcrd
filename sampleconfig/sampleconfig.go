@@ -13,14 +13,14 @@ const FileContents = `[Application Options]
 
 ; The directory to store data such as the block chain and peer addresses.  The
 ; block chain takes several GB, so this location must have a lot of free space.
-; The default is ~/.hxd2/data on POSIX OSes, $LOCALAPPDATA/Dcrd/data on Windows,
-; ~/Library/Application Support/Dcrd/data on macOS, and $homed/dcrd/data on
+; The default is ~/.hxd2/data on POSIX OSes, $LOCALAPPDATA/hxd2/data on Windows,
+; ~/Library/Application Support/hxd2/data on macOS, and $homed/hxd2/data on
 ; Plan9.  Environment variables are expanded so they may be used.  NOTE: Windows
 ; environment variables are typically %VARIABLE%, but they must be accessed with
 ; $VARIABLE here.
 ; datadir=~/.hxd2/data                            ; Unix
-; datadir=$LOCALAPPDATA/Dcrd/data                 ; Windows
-; datadir=~/Library/Application Support/Dcrd/data ; macOS
+; datadir=$LOCALAPPDATA/hxd2/data                 ; Windows
+; datadir=~/Library/Application Support/hxd2/data ; macOS
 
 
 ; ------------------------------------------------------------------------------

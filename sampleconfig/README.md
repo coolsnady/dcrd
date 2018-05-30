@@ -3,7 +3,7 @@ sampleconfig
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/sampleconfig)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/sampleconfig)
 
 Package sampleconfig provides a single constant that contains the contents of
 the sample configuration file for hxd2.  This is provided for tools that perform
@@ -14,7 +14,7 @@ samples of other configuration options.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/sampleconfig
+$ go get -u github.com/hunjixin/hxd2/sampleconfig
 ```
 
 ## License

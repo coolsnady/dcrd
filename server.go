@@ -19,21 +19,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hunjixin/dcrd/addrmgr"
-	"github.com/hunjixin/dcrd/blockchain"
-	"github.com/hunjixin/dcrd/blockchain/indexers"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/connmgr"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/gcs"
-	"github.com/hunjixin/dcrd/gcs/blockcf"
-	"github.com/hunjixin/dcrd/mempool"
-	"github.com/hunjixin/dcrd/mining"
-	"github.com/hunjixin/dcrd/peer"
-	"github.com/hunjixin/dcrd/txscript"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/addrmgr"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/indexers"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/connmgr"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/gcs"
+	"github.com/hunjixin/hxd2/gcs/blockcf"
+	"github.com/hunjixin/hxd2/mempool"
+	"github.com/hunjixin/hxd2/mining"
+	"github.com/hunjixin/hxd2/peer"
+	"github.com/hunjixin/hxd2/txscript"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (
@@ -1794,7 +1794,7 @@ func (s *server) peerHandler() {
 
 	if !cfg.DisableDNSSeed {
 		// Add peers discovered through DNS to the address manager.
-		connmgr.SeedFromDNS(activeNetParams.Params, defaultRequiredServices, dcrdLookup, func(addrs []*wire.NetAddress) {
+		connmgr.SeedFromDNS(activeNetParams.Params, defaultRequiredServices, hxd2Lookup, func(addrs []*wire.NetAddress) {
 			// Bitcoind uses a lookup of the dns seeder here. This
 			// is rather strange since the values looked up by the
 			// DNS seed lookups will vary quite a lot.
@@ -2323,7 +2323,7 @@ func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Param
 		services &^= wire.SFNodeCF
 	}
 
-	amgr := addrmgr.New(cfg.DataDir, dcrdLookup)
+	amgr := addrmgr.New(cfg.DataDir, hxd2Lookup)
 
 	var listeners []net.Listener
 	var nat NAT
@@ -2621,7 +2621,7 @@ func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Param
 		OnAccept:       s.inboundPeerConnected,
 		RetryDuration:  connectionRetryInterval,
 		TargetOutbound: uint32(targetOutbound),
-		Dial:           dcrdDial,
+		Dial:           hxd2Dial,
 		OnConnection:   s.outboundPeerConnected,
 		GetNewAddress:  newAddressFunc,
 	})
@@ -2673,9 +2673,9 @@ func addrStringToNetAddr(addr string) (net.Addr, error) {
 	}
 
 	// Attempt to look up an IP address associated with the parsed host.
-	// The dcrdLookup function will transparently handle performing the
+	// The hxd2Lookup function will transparently handle performing the
 	// lookup over Tor if necessary.
-	ips, err := dcrdLookup(host)
+	ips, err := hxd2Lookup(host)
 	if err != nil {
 		return nil, err
 	}

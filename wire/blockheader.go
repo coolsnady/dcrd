@@ -10,7 +10,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 // MaxBlockHeaderPayload is the maximum number of bytes a block header can be.

@@ -8,9 +8,9 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/dcrec/secp256k1"
-	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/dcrec/secp256k1"
+	"github.com/hunjixin/hxd2/txscript"
 )
 
 // currentCompressionVersion is the current script compression version of the

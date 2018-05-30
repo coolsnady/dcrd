@@ -10,7 +10,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/hunjixin/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/dcrjson"
 
 	"github.com/btcsuite/go-socks/socks"
 )

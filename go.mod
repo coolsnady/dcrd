@@ -10,7 +10,7 @@ require (
 	github.com/davecgh/go-spew v1.1.0
 	github.com/dchest/blake256 v1.0.0
 	github.com/decred/base58 v1.0.0
-	github.com/hunjixin/slog v1.0.0
+	github.com/decred/slog v1.0.0
 	github.com/gorilla/websocket v1.2.0
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jrick/bitset v1.0.0

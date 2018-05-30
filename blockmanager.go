@@ -16,14 +16,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hunjixin/dcrd/blockchain"
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/mempool"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/mempool"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (
@@ -2639,7 +2639,7 @@ func warnMultipleDBs() {
 	// Warn if there are extra databases.
 	if len(duplicateDbPaths) > 0 {
 		selectedDbPath := blockDbPath(cfg.DbType)
-		dcrdLog.Warnf("WARNING: There are multiple block chain databases "+
+		hxd2Log.Warnf("WARNING: There are multiple block chain databases "+
 			"using different database types.\nYou probably don't "+
 			"want to waste disk space by having more than one.\n"+
 			"Your current database is located at [%v].\nThe "+
@@ -2658,7 +2658,7 @@ func loadBlockDB() (database.DB, error) {
 	// handle it uniquely.  We also don't want to worry about the multiple
 	// database type warnings when running with the memory database.
 	if cfg.DbType == "memdb" {
-		dcrdLog.Infof("Creating block database in memory.")
+		hxd2Log.Infof("Creating block database in memory.")
 		db, err := database.Create(cfg.DbType)
 		if err != nil {
 			return nil, err
@@ -2671,7 +2671,7 @@ func loadBlockDB() (database.DB, error) {
 	// The database name is based on the database type.
 	dbPath := blockDbPath(cfg.DbType)
 
-	dcrdLog.Infof("Loading block database from '%s'", dbPath)
+	hxd2Log.Infof("Loading block database from '%s'", dbPath)
 	db, err := database.Open(cfg.DbType, dbPath, activeNetParams.Net)
 	if err != nil {
 		// Return the error if it's not because the database doesn't
@@ -2693,7 +2693,7 @@ func loadBlockDB() (database.DB, error) {
 		}
 	}
 
-	dcrdLog.Info("Block database loaded")
+	hxd2Log.Info("Block database loaded")
 	return db, nil
 }
 

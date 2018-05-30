@@ -11,12 +11,12 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/dcrjson"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/gcs"
-	"github.com/hunjixin/dcrd/gcs/blockcf"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrjson"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/gcs"
+	"github.com/hunjixin/hxd2/gcs/blockcf"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // FutureGetBestBlockHashResult is a future promise to deliver the result of a

@@ -3,7 +3,7 @@ rpcclient
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/rpcclient)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/rpcclient)
 
 rpcclient implements a Websocket-enabled Decred JSON-RPC client package written
 in [Go](http://golang.org/).  It provides a robust and easy to use client for
@@ -18,12 +18,12 @@ implement and the API is not stable yet.
 
 ## Documentation
 
-* [API Reference](http://godoc.org/github.com/hunjixin/dcrd/rpcclient)
-* [hxd2 Websockets Example](https://github.com/hunjixin/dcrd/tree/master/rpcclient/examples/dcrdwebsockets)
+* [API Reference](http://godoc.org/github.com/hunjixin/hxd2/rpcclient)
+* [hxd2 Websockets Example](https://github.com/hunjixin/hxd2/tree/master/rpcclient/examples/hxd2websockets)
   Connects to a hxd2 RPC server using TLS-secured websockets, registers for
   block connected and block disconnected notifications, and gets the current
   block count
-* [dcrwallet Websockets Example](https://github.com/hunjixin/dcrd/tree/master/rpcclient/examples/dcrwalletwebsockets)  
+* [dcrwallet Websockets Example](https://github.com/hunjixin/hxd2/tree/master/rpcclient/examples/dcrwalletwebsockets)  
   Connects to a dcrwallet RPC server using TLS-secured websockets, registers for
   notifications about changes to account balances, and gets a list of unspent
   transaction outputs (utxos) the wallet can sign
@@ -44,7 +44,7 @@ implement and the API is not stable yet.
 ## Installation
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/rpcclient
+$ go get -u github.com/hunjixin/hxd2/rpcclient
 ```
 
 ## License

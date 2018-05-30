@@ -8,9 +8,9 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/database"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
 )
 
 // nodeAtHeightFromTopNode goes backwards through a node until it a reaches

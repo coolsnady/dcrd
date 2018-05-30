@@ -13,10 +13,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/database/ffldb"
-	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/database/ffldb"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 // dbType is the database type name for this driver.

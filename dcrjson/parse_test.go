@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrjson"
 )
 
 func decodeHash(reversedHash string) chainhash.Hash {

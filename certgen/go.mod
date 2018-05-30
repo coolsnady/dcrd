@@ -1,1 +1,1 @@
-module github.com/hunjixin/dcrd/certgen
+module github.com/hunjixin/hxd2/certgen

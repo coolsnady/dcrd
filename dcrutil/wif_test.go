@@ -8,9 +8,9 @@ package dcrutil_test
 import (
 	"testing"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainec"
-	. "github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainec"
+	. "github.com/hunjixin/hxd2/dcrutil"
 )
 
 func TestEncodeDecodeWIF(t *testing.T) {

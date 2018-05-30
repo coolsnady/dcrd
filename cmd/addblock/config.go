@@ -10,11 +10,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/database"
-	_ "github.com/hunjixin/dcrd/database/ffldb"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/database"
+	_ "github.com/hunjixin/hxd2/database/ffldb"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/wire"
 	flags "github.com/jessevdk/go-flags"
 )
 
@@ -25,8 +25,8 @@ const (
 )
 
 var (
-	dcrdHomeDir     = dcrutil.AppDataDir("hxd2", false)
-	defaultDataDir  = filepath.Join(dcrdHomeDir, "data")
+	hxd2HomeDir     = dcrutil.AppDataDir("hxd2", false)
+	defaultDataDir  = filepath.Join(hxd2HomeDir, "data")
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 )

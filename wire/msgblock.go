@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array

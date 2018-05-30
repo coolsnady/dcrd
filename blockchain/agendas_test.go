@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/txscript"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/txscript"
 )
 
 // testLNFeaturesDeployment ensures the deployment of the LN features agenda

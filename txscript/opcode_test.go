@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // testScriptFlags are the script flags which are used in the tests when

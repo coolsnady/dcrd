@@ -1,3 +1,3 @@
-module github.com/hunjixin/dcrd/wire
+module github.com/hunjixin/hxd2/wire
 
-require github.com/hunjixin/dcrd/chaincfg/chainhash v1.0.0
+require github.com/hunjixin/hxd2/chaincfg/chainhash v1.0.0

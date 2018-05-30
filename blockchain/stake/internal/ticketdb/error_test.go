@@ -8,7 +8,7 @@ package ticketdb_test
 import (
 	"testing"
 
-	"github.com/hunjixin/dcrd/blockchain/stake/internal/ticketdb"
+	"github.com/hunjixin/hxd2/blockchain/stake/internal/ticketdb"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

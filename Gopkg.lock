@@ -18,6 +18,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/btcsuite/btclog"
+  packages = ["."]
+  revision = "84c8d2346e9fc8c7b947e243b9c24e6df9fd206a"
+
+[[projects]]
+  branch = "master"
   name = "github.com/btcsuite/go-socks"
   packages = ["socks"]
   revision = "4720035b7bfd2a9bb130b1c184f8bbe41b6f0d0f"
@@ -46,6 +52,12 @@
   name = "github.com/btcsuite/snappy-go"
   packages = ["."]
   revision = "0bdef8d067237991ddaa1bb6072a740bc40601ba"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/btcsuite/websocket"
+  packages = ["."]
+  revision = "31079b6807923eb23992c421b114992b95131b55"
 
 [[projects]]
   branch = "master"
@@ -78,8 +90,42 @@
   revision = "56c501706f00d9e1cfacee19a27117e12da24734"
 
 [[projects]]
+  name = "github.com/decred/dcrd"
+  packages = [
+    "blockchain",
+    "blockchain/chaingen",
+    "blockchain/indexers",
+    "blockchain/internal/dbnamespace",
+    "blockchain/internal/progresslog",
+    "blockchain/stake",
+    "blockchain/stake/internal/dbnamespace",
+    "blockchain/stake/internal/ticketdb",
+    "blockchain/stake/internal/tickettreap",
+    "certgen",
+    "chaincfg",
+    "chaincfg/chainec",
+    "chaincfg/chainhash",
+    "database",
+    "database/internal/treap",
+    "dcrec/edwards",
+    "dcrec/secp256k1",
+    "dcrec/secp256k1/schnorr",
+    "dcrjson",
+    "dcrutil",
+    "gcs",
+    "gcs/blockcf",
+    "hdkeychain",
+    "mining",
+    "rpcclient",
+    "txscript",
+    "wire"
+  ]
+  revision = "fd99f572cfd52ca722ad501ccb34acdcb22b4a67"
+  version = "v1.2.0"
+
+[[projects]]
   branch = "master"
-  name = "github.com/hunjixin/slog"
+  name = "github.com/decred/slog"
   packages = ["."]
   revision = "fbd821ef791ba2b8ae945f5d44f4e49396d230c5"
 
@@ -87,6 +133,49 @@
   name = "github.com/gorilla/websocket"
   packages = ["."]
   revision = "ea4d1f681babbce9545c9c5f3d5194a789c89f5b"
+  version = "v1.2.0"
+
+[[projects]]
+  name = "github.com/hunjixin/dcrd"
+  packages = [
+    "addrmgr",
+    "blockchain",
+    "blockchain/chaingen",
+    "blockchain/fullblocktests",
+    "blockchain/indexers",
+    "blockchain/internal/dbnamespace",
+    "blockchain/internal/progresslog",
+    "blockchain/stake",
+    "blockchain/stake/internal/dbnamespace",
+    "blockchain/stake/internal/ticketdb",
+    "blockchain/stake/internal/tickettreap",
+    "certgen",
+    "chaincfg",
+    "chaincfg/chainec",
+    "chaincfg/chainhash",
+    "connmgr",
+    "database",
+    "database/ffldb",
+    "database/internal/treap",
+    "dcrec/edwards",
+    "dcrec/secp256k1",
+    "dcrec/secp256k1/schnorr",
+    "dcrjson",
+    "dcrutil",
+    "gcs",
+    "gcs/blockcf",
+    "hdkeychain",
+    "limits",
+    "mempool",
+    "mining",
+    "peer",
+    "rpcclient",
+    "rpctest",
+    "sampleconfig",
+    "txscript",
+    "wire"
+  ]
+  revision = "fd99f572cfd52ca722ad501ccb34acdcb22b4a67"
   version = "v1.2.0"
 
 [[projects]]
@@ -128,6 +217,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "746f7a4be4e049bc47a6d29b4fdb85c908c7da9e1983f856b26b69a218bfae80"
+  inputs-digest = "7f99ebb0a836fe6072e67578af6e4d5fe57ce8bbf54e24930663451b8e40de3e"
   solver-name = "gps-cdcl"
   solver-version = 1

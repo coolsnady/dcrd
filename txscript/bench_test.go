@@ -10,7 +10,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 var (

@@ -17,14 +17,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hunjixin/dcrd/blockchain/chaingen"
-	"github.com/hunjixin/dcrd/blockchain/stake"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/txscript"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain/chaingen"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/txscript"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // recalculateMsgBlockMerkleRootsSize recalculates the merkle roots for a msgBlock,

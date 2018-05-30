@@ -6,9 +6,9 @@
 package blockchain
 
 import (
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // BlockLocator is used to help locate a specific block.  The algorithm for

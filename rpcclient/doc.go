@@ -164,7 +164,7 @@ Example Usage
 
 The following full-blown client examples are in the examples directory:
 
- - dcrdwebsockets
+ - hxd2websockets
    Connects to a hxd2 RPC server using TLS-secured websockets, registers for
    block connected and block disconnected notifications, and gets the current
    block count

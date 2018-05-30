@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainec"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainec"
 	"github.com/decred/base58"
 )
 

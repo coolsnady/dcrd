@@ -13,7 +13,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 const (

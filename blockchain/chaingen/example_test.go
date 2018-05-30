@@ -7,8 +7,8 @@ package chaingen_test
 import (
 	"fmt"
 
-	"github.com/hunjixin/dcrd/blockchain/chaingen"
-	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/hxd2/blockchain/chaingen"
+	"github.com/hunjixin/hxd2/chaincfg"
 )
 
 // This example demonstrates creating a new generator instance and using it to

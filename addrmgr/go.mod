@@ -1,6 +1,6 @@
-module github.com/hunjixin/dcrd/addrmgr
+module github.com/hunjixin/hxd2/addrmgr
 
 require (
-	github.com/hunjixin/dcrd/wire v1.0.0
-	github.com/hunjixin/slog v1.0.0
+	github.com/hunjixin/hxd2/wire v1.0.0
+	github.com/decred/slog v1.0.0
 )

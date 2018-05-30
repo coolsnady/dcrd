@@ -1,4 +1,4 @@
-module github.com/hunjixin/dcrd/dcrutil
+module github.com/hunjixin/hxd2/dcrutil
 
 require (
 	github.com/hunjixin/hxd2 v1.3.0

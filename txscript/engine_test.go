@@ -8,8 +8,8 @@ package txscript
 import (
 	"testing"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step()

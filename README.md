@@ -111,13 +111,13 @@ If you have any further questions you can find us at:
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/hunjixin/dcrd/issues)
+The [integrated github issue tracker](https://github.com/hunjixin/hxd2/issues)
 is used for this project.
 
 ## Documentation
 
 The documentation is a work-in-progress.  It is located in the
-[docs](https://github.com/hunjixin/dcrd/tree/master/docs) folder.
+[docs](https://github.com/hunjixin/hxd2/tree/master/docs) folder.
 
 ## License
 

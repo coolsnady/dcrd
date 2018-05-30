@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/hunjixin/dcrd/certgen"
-	rpc "github.com/hunjixin/dcrd/rpcclient"
+	"github.com/hunjixin/hxd2/certgen"
+	rpc "github.com/hunjixin/hxd2/rpcclient"
 )
 
 // nodeConfig contains all the args, and data required to launch a hxd2 process

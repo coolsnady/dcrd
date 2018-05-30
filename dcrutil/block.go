@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // OutOfRangeError describes an error due to accessing an element that is out

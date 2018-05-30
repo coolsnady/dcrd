@@ -11,20 +11,20 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/database"
-	_ "github.com/hunjixin/dcrd/database/ffldb"
-	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/database"
+	_ "github.com/hunjixin/hxd2/database/ffldb"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 var (
-	dcrdHomeDir     = dcrutil.AppDataDir("hxd2", false)
+	hxd2HomeDir     = dcrutil.AppDataDir("hxd2", false)
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 
 	// Default global config.
 	cfg = &config{
-		DataDir: filepath.Join(dcrdHomeDir, "data"),
+		DataDir: filepath.Join(hxd2HomeDir, "data"),
 		DbType:  "ffldb",
 	}
 )

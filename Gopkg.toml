@@ -28,7 +28,7 @@
   name = "github.com/decred/base58"
 
 [[constraint]]
-  name = "github.com/hunjixin/slog"
+  name = "github.com/decred/slog"
   version = "1.0.0"
 
 [[constraint]]

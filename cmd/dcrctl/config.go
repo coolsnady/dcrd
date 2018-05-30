@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/hunjixin/dcrd/dcrjson"
-	"github.com/hunjixin/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/dcrjson"
+	"github.com/hunjixin/hxd2/dcrutil"
 
 	flags "github.com/jessevdk/go-flags"
 )
@@ -30,13 +30,13 @@ const (
 )
 
 var (
-	dcrdHomeDir            = dcrutil.AppDataDir("hxd2", false)
+	hxd2HomeDir            = dcrutil.AppDataDir("hxd2", false)
 	dcrctlHomeDir          = dcrutil.AppDataDir("dcrctl", false)
 	dcrwalletHomeDir       = dcrutil.AppDataDir("dcrwallet", false)
 	defaultConfigFile      = filepath.Join(dcrctlHomeDir, "dcrctl.conf")
 	defaultRPCServer       = "localhost"
 	defaultWalletRPCServer = "localhost"
-	defaultRPCCertFile     = filepath.Join(dcrdHomeDir, "rpc.cert")
+	defaultRPCCertFile     = filepath.Join(hxd2HomeDir, "rpc.cert")
 	defaultWalletCertFile  = filepath.Join(dcrwalletHomeDir, "rpc.cert")
 )
 
@@ -346,18 +346,18 @@ func loadConfig() (*config, []string, error) {
 func createDefaultConfigFile(destinationPath string) error {
 	// Nothing to do when there is no existing hxd2 conf file at the default
 	// path to extract the details from.
-	dcrdConfigPath := filepath.Join(dcrdHomeDir, "hxd2.conf")
-	if !fileExists(dcrdConfigPath) {
+	hxd2ConfigPath := filepath.Join(hxd2HomeDir, "hxd2.conf")
+	if !fileExists(hxd2ConfigPath) {
 		return nil
 	}
 
 	// Read hxd2.conf from its default path
-	dcrdConfigFile, err := os.Open(dcrdConfigPath)
+	hxd2ConfigFile, err := os.Open(hxd2ConfigPath)
 	if err != nil {
 		return err
 	}
-	defer dcrdConfigFile.Close()
-	content, err := ioutil.ReadAll(dcrdConfigFile)
+	defer hxd2ConfigFile.Close()
+	content, err := ioutil.ReadAll(hxd2ConfigFile)
 	if err != nil {
 		return err
 	}

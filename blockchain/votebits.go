@@ -6,7 +6,7 @@
 package blockchain
 
 import (
-	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg"
 )
 
 // deploymentChecker provides a thresholdConditionChecker which can be used to

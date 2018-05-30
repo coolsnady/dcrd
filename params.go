@@ -6,8 +6,8 @@
 package main
 
 import (
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the

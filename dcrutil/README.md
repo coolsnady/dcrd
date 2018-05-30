@@ -4,7 +4,7 @@ dcrutil
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/dcrutil)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/dcrutil)
 
 Package dcrutil provides hunjixin-specific convenience functions and types.
 A comprehensive suite of tests is provided to ensure proper functionality.
@@ -17,7 +17,7 @@ standalone package for any projects needing the functionality provided.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/dcrutil
+$ go get -u github.com/hunjixin/hxd2/dcrutil
 ```
 
 ## License

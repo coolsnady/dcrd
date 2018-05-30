@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/hunjixin/dcrd/chaincfg"
+	. "github.com/hunjixin/hxd2/chaincfg"
 )
 
 // Define some of the required parameters for a user-registered

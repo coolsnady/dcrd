@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/hunjixin/dcrd/blockchain"
-	"github.com/hunjixin/dcrd/blockchain/indexers"
-	"github.com/hunjixin/dcrd/database"
-	"github.com/hunjixin/dcrd/limits"
-	"github.com/hunjixin/slog"
+	"github.com/decred/slog"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/indexers"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/limits"
 )
 
 const (

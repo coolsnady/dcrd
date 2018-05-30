@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hunjixin/dcrd/blockchain/stake/internal/dbnamespace"
-	"github.com/hunjixin/dcrd/blockchain/stake/internal/tickettreap"
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/chaincfg/chainhash"
-	"github.com/hunjixin/dcrd/database"
-	_ "github.com/hunjixin/dcrd/database/ffldb"
+	"github.com/hunjixin/hxd2/blockchain/stake/internal/dbnamespace"
+	"github.com/hunjixin/hxd2/blockchain/stake/internal/tickettreap"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
+	_ "github.com/hunjixin/hxd2/database/ffldb"
 )
 
 const (

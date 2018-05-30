@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hunjixin/dcrd/certgen"
+	"github.com/hunjixin/hxd2/certgen"
 )
 
 // TestNewTLSCertPair ensures the NewTLSCertPair function works as expected.

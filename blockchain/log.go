@@ -6,7 +6,7 @@
 package blockchain
 
 import (
-	"github.com/hunjixin/slog"
+	"github.com/decred/slog"
 )
 
 // log is a logger that is initialized with no output filters.  This

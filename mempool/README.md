@@ -3,7 +3,7 @@ mempool
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/mempool)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/mempool)
 
 Package mempool provides a policy-enforced pool of unmined Decred transactions.
 
@@ -78,7 +78,7 @@ be an exhaustive list.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/mempool
+$ go get -u github.com/hunjixin/hxd2/mempool
 ```
 
 ## License

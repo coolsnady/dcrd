@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // KnownAddress tracks information about a known network address that is used

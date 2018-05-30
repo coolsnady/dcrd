@@ -3,7 +3,7 @@ chaincfg
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/chaincfg)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the three standard
 Decred networks and provides the ability for callers to define their own custom
@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hunjixin/dcrd/dcrutil"
-	"github.com/hunjixin/dcrd/chaincfg"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Decred network")
@@ -56,7 +56,7 @@ func main() {
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/chaincfg
+$ go get -u github.com/hunjixin/hxd2/chaincfg
 ```
 
 ## License

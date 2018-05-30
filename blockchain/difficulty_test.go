@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hunjixin/dcrd/chaincfg"
-	"github.com/hunjixin/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 func TestBigToCompact(t *testing.T) {

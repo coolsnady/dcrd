@@ -3,7 +3,7 @@ txscript
 
 [![Build Status](http://img.shields.io/travis/hunjixin/hxd2.svg)](https://travis-ci.org/hunjixin/hxd2)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/dcrd/txscript)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/hunjixin/hxd2/txscript)
 
 Package txscript implements the Decred transaction script language.  There is
 a comprehensive test suite.
@@ -20,20 +20,20 @@ although it is still fairly powerful.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/hunjixin/dcrd/txscript
+$ go get -u github.com/hunjixin/hxd2/txscript
 ```
 
 ## Examples
 
-* [Standard Pay-to-pubkey-hash Script](http://godoc.org/github.com/hunjixin/dcrd/txscript#example-PayToAddrScript)  
+* [Standard Pay-to-pubkey-hash Script](http://godoc.org/github.com/hunjixin/hxd2/txscript#example-PayToAddrScript)  
   Demonstrates creating a script which pays to a Decred address.  It also
   prints the created script hex and uses the DisasmString function to display
   the disassembled script.
 
-* [Extracting Details from Standard Scripts](http://godoc.org/github.com/hunjixin/dcrd/txscript#example-ExtractPkScriptAddrs)  
+* [Extracting Details from Standard Scripts](http://godoc.org/github.com/hunjixin/hxd2/txscript#example-ExtractPkScriptAddrs)  
   Demonstrates extracting information from a standard public key script.
 
-* [Manually Signing a Transaction Output](http://godoc.org/github.com/hunjixin/dcrd/txscript#example-SignTxOutput)  
+* [Manually Signing a Transaction Output](http://godoc.org/github.com/hunjixin/hxd2/txscript#example-SignTxOutput)  
   Demonstrates manually creating and signing a redeem transaction.
 
 ## License
