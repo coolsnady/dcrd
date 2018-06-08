@@ -14,9 +14,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/decred/dcrd/blockchain/chaingen"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/blockchain/chaingen"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 // cloneParams returns a deep copy of the provided parameters so the caller is

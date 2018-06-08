@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/indexers"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 var zeroHash = chainhash.Hash{}

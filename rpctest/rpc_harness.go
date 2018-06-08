@@ -16,11 +16,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/rpcclient"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/rpcclient"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (
@@ -67,10 +67,10 @@ const (
 // Harness to exercise functionality.
 type HarnessTestCase func(r *Harness, t *testing.T)
 
-// Harness fully encapsulates an active dcrd process to provide a unified
-// platform for creating rpc driven integration tests involving dcrd. The
-// active dcrd node will typically be run in simnet mode in order to allow for
-// easy generation of test blockchains.  The active dcrd process is fully
+// Harness fully encapsulates an active hxd2 process to provide a unified
+// platform for creating rpc driven integration tests involving hxd2. The
+// active hxd2 node will typically be run in simnet mode in order to allow for
+// easy generation of test blockchains.  The active hxd2 process is fully
 // managed by Harness, which handles the necessary initialization, and teardown
 // of the process along with any temporary directories created as a result.
 // Multiple Harness instances may be run concurrently, in order to allow for
@@ -208,7 +208,7 @@ func New(activeNet *chaincfg.Params, handlers *rpcclient.NotificationHandlers, e
 // NOTE: This method and TearDown should always be called from the same
 // goroutine as they are not concurrent safe.
 func (h *Harness) SetUp(createTestChain bool, numMatureOutputs uint32) error {
-	// Start the dcrd node itself. This spawns a new process which will be
+	// Start the hxd2 node itself. This spawns a new process which will be
 	// managed
 	if err := h.node.start(); err != nil {
 		return err
@@ -226,7 +226,7 @@ func (h *Harness) SetUp(createTestChain bool, numMatureOutputs uint32) error {
 		return err
 	}
 
-	// Ensure dcrd properly dispatches our registered call-back for each new
+	// Ensure hxd2 properly dispatches our registered call-back for each new
 	// block. Otherwise, the memWallet won't function properly.
 	if err := h.Node.NotifyBlocks(); err != nil {
 		return err
@@ -284,7 +284,7 @@ func (h *Harness) TearDown() error {
 	return nil
 }
 
-// connectRPCClient attempts to establish an RPC connection to the created dcrd
+// connectRPCClient attempts to establish an RPC connection to the created hxd2
 // process belonging to this Harness instance. If the initial connection
 // attempt fails, this function will retry h.maxConnRetries times, backing off
 // the time between subsequent attempts. If after h.maxConnRetries attempts,

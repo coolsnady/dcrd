@@ -13,16 +13,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrjson"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/mining"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/indexers"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrjson"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/mining"
+	"github.com/hunjixin/hxd2/txscript"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (

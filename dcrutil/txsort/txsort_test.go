@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // TestSort ensures the transaction sorting works as expected.

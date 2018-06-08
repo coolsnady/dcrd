@@ -7,9 +7,9 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // SequenceLock represents the minimum timestamp and minimum block height after

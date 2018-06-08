@@ -9,8 +9,8 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/decred/dcrd/chaincfg/chainec"
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg/chainec"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 // sigCacheEntry represents an entry in the SigCache. Entries within the

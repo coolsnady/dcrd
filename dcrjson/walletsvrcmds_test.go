@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/decred/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/dcrjson"
 )
 
 // TestWalletSvrCmds tests all of the wallet server commands marshal and

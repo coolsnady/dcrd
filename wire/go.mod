@@ -1,3 +1,3 @@
-module github.com/decred/dcrd/wire
+module github.com/hunjixin/hxd2/wire
 
-require github.com/decred/dcrd/chaincfg/chainhash v1.0.0
+require github.com/hunjixin/hxd2/chaincfg/chainhash v1.0.0

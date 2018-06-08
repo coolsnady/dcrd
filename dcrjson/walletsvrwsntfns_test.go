@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/decred/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/dcrjson"
 )
 
 // TestWalletSvrWsNtfns tests all of the chain server websocket-specific
@@ -45,14 +45,14 @@ func TestWalletSvrWsNtfns(t *testing.T) {
 			},
 		},
 		{
-			name: "dcrdconnected",
+			name: "hxd2connected",
 			newNtfn: func() (interface{}, error) {
-				return dcrjson.NewCmd("dcrdconnected", true)
+				return dcrjson.NewCmd("hxd2connected", true)
 			},
 			staticNtfn: func() interface{} {
 				return dcrjson.NewBtcdConnectedNtfn(true)
 			},
-			marshalled: `{"jsonrpc":"1.0","method":"dcrdconnected","params":[true],"id":null}`,
+			marshalled: `{"jsonrpc":"1.0","method":"hxd2connected","params":[true],"id":null}`,
 			unmarshalled: &dcrjson.BtcdConnectedNtfn{
 				Connected: true,
 			},

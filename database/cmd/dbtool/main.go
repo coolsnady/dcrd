@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/database"
 	"github.com/decred/slog"
+	"github.com/hunjixin/hxd2/database"
 	flags "github.com/jessevdk/go-flags"
 )
 

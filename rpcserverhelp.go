@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/decred/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/dcrjson"
 )
 
 // helpDescsEnUS defines the English descriptions used for the help strings.
@@ -21,7 +21,7 @@ var helpDescsEnUS = map[string]string{
 		"The levelspec can either a debug level or of the form:\n" +
 		"<subsystem>=<level>,<subsystem2>=<level2>,...\n" +
 		"The valid debug levels are trace, debug, info, warn, error, and critical.\n" +
-		"The valid subsystems are AMGR, ADXR, BCDB, BMGR, DCRD, CHAN, DISC, PEER, RPCS, SCRP, SRVR, and TXMP.\n" +
+		"The valid subsystems are AMGR, ADXR, BCDB, BMGR, hxd2, CHAN, DISC, PEER, RPCS, SCRP, SRVR, and TXMP.\n" +
 		"Finally the keyword 'show' will return a list of the available subsystems.",
 	"debuglevel-levelspec":   "The debug level(s) to use or the keyword 'show'",
 	"debuglevel--condition0": "levelspec!=show",
@@ -238,7 +238,7 @@ var helpDescsEnUS = map[string]string{
 	"getblock--synopsis":   "Returns information about a block given its hash.",
 	"getblock-hash":        "The hash of the block",
 	"getblock-verbose":     "Specifies the block is returned as a JSON object instead of hex-encoded string",
-	"getblock-verbosetx":   "Specifies that each transaction is returned as a JSON object and only applies if the verbose flag is true (dcrd extension)",
+	"getblock-verbosetx":   "Specifies that each transaction is returned as a JSON object and only applies if the verbose flag is true (hxd2 extension)",
 	"getblock--condition0": "verbose=false",
 	"getblock--condition1": "verbose=true",
 	"getblock--result0":    "Hex-encoded bytes of the serialized block",
@@ -620,7 +620,7 @@ var helpDescsEnUS = map[string]string{
 
 	// GetRawMempoolVerboseResult help.
 	"getrawmempoolverboseresult-size":             "Transaction size in bytes",
-	"getrawmempoolverboseresult-fee":              "Transaction fee in decred",
+	"getrawmempoolverboseresult-fee":              "Transaction fee in hunjixin",
 	"getrawmempoolverboseresult-time":             "Local time transaction entered pool in seconds since 1 Jan 1970 GMT",
 	"getrawmempoolverboseresult-height":           "Block height when transaction entered the pool",
 	"getrawmempoolverboseresult-startingpriority": "Priority when transaction entered the pool",
@@ -712,7 +712,7 @@ var helpDescsEnUS = map[string]string{
 	// SendRawTransactionCmd help.
 	"sendrawtransaction--synopsis":     "Submits the serialized, hex-encoded transaction to the local peer and relays it to the network.",
 	"sendrawtransaction-hextx":         "Serialized, hex-encoded signed transaction",
-	"sendrawtransaction-allowhighfees": "Whether or not to allow insanely high fees (dcrd does not yet implement this parameter, so it has no effect)",
+	"sendrawtransaction-allowhighfees": "Whether or not to allow insanely high fees (hxd2 does not yet implement this parameter, so it has no effect)",
 	"sendrawtransaction--result0":      "The hash of the transaction",
 
 	// SetGenerateCmd help.
@@ -721,8 +721,8 @@ var helpDescsEnUS = map[string]string{
 	"setgenerate-genproclimit": "The number of processors (cores) to limit generation to or -1 for default",
 
 	// StopCmd help.
-	"stop--synopsis": "Shutdown dcrd.",
-	"stop--result0":  "The string 'dcrd stopping.'",
+	"stop--synopsis": "Shutdown hxd2.",
+	"stop--result0":  "The string 'hxd2 stopping.'",
 
 	// SubmitBlockOptions help.
 	"submitblockoptions-workid": "This parameter is currently ignored",
@@ -746,7 +746,7 @@ var helpDescsEnUS = map[string]string{
 	// VerifyChainCmd help.
 	"verifychain--synopsis": "Verifies the block chain database.\n" +
 		"The actual checks performed by the checklevel parameter are implementation specific.\n" +
-		"For dcrd this is:\n" +
+		"For hxd2 this is:\n" +
 		"checklevel=0 - Look up each block and ensure it can be loaded from the database.\n" +
 		"checklevel=1 - Perform basic context-free sanity checks on each block.",
 	"verifychain-checklevel": "How thorough the block verification is",

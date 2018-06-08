@@ -11,27 +11,27 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/database"
-	_ "github.com/decred/dcrd/database/ffldb"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/database"
+	_ "github.com/hunjixin/hxd2/database/ffldb"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 var (
-	dcrdHomeDir     = dcrutil.AppDataDir("dcrd", false)
+	hxd2HomeDir     = dcrutil.AppDataDir("hxd2", false)
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 
 	// Default global config.
 	cfg = &config{
-		DataDir: filepath.Join(dcrdHomeDir, "data"),
+		DataDir: filepath.Join(hxd2HomeDir, "data"),
 		DbType:  "ffldb",
 	}
 )
 
 // config defines the global configuration options.
 type config struct {
-	DataDir string `short:"b" long:"datadir" description:"Location of the dcrd data directory"`
+	DataDir string `short:"b" long:"datadir" description:"Location of the hxd2 data directory"`
 	DbType  string `long:"dbtype" description:"Database backend to use for the Block Chain"`
 	TestNet bool   `long:"testnet" description:"Use the test network"`
 	SimNet  bool   `long:"simnet" description:"Use the simulation test network"`

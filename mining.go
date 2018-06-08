@@ -13,15 +13,15 @@ import (
 	"sort"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/mempool"
-	"github.com/decred/dcrd/mining"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/mempool"
+	"github.com/hunjixin/hxd2/mining"
+	"github.com/hunjixin/hxd2/txscript"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 const (
@@ -43,7 +43,7 @@ const (
 
 	// coinbaseFlags is some extra data appended to the coinbase script
 	// sig.
-	coinbaseFlags = "/dcrd/"
+	coinbaseFlags = "/hxd2/"
 
 	// kilobyte is the size of a kilobyte.
 	kilobyte = 1000

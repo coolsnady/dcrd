@@ -9,9 +9,9 @@ import (
 	"encoding/binary"
 	"math"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // SigHashType represents hash type bits at the end of a signature.

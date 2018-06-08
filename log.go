@@ -10,16 +10,16 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decred/dcrd/addrmgr"
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/connmgr"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/mempool"
-	"github.com/decred/dcrd/peer"
-	"github.com/decred/dcrd/txscript"
 	"github.com/decred/slog"
+	"github.com/hunjixin/hxd2/addrmgr"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/blockchain/indexers"
+	"github.com/hunjixin/hxd2/blockchain/stake"
+	"github.com/hunjixin/hxd2/connmgr"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/mempool"
+	"github.com/hunjixin/hxd2/peer"
+	"github.com/hunjixin/hxd2/txscript"
 	"github.com/jrick/logrotate/rotator"
 )
 
@@ -58,7 +58,7 @@ var (
 	cmgrLog = backendLog.Logger("CMGR")
 	bcdbLog = backendLog.Logger("BCDB")
 	bmgrLog = backendLog.Logger("BMGR")
-	dcrdLog = backendLog.Logger("DCRD")
+	hxd2Log = backendLog.Logger("hxd2")
 	chanLog = backendLog.Logger("CHAN")
 	discLog = backendLog.Logger("DISC")
 	indxLog = backendLog.Logger("INDX")
@@ -91,7 +91,7 @@ var subsystemLoggers = map[string]slog.Logger{
 	"CMGR": cmgrLog,
 	"BCDB": bcdbLog,
 	"BMGR": bmgrLog,
-	"DCRD": dcrdLog,
+	"hxd2": hxd2Log,
 	"CHAN": chanLog,
 	"DISC": discLog,
 	"INDX": indxLog,
@@ -160,7 +160,7 @@ func directionString(inbound bool) string {
 
 // fatalf logs a string, then cleanly exits.
 func fatalf(str string) {
-	dcrdLog.Errorf("Unable to create profiler: %v", str)
+	hxd2Log.Errorf("Unable to create profiler: %v", str)
 	os.Stdout.Sync()
 	if logRotator != nil {
 		logRotator.Close()

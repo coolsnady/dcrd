@@ -10,7 +10,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/decred/dcrd/dcrjson"
+	"github.com/hunjixin/hxd2/dcrjson"
 )
 
 // TestUsageFlagStringer tests the stringized output for the UsageFlag type.

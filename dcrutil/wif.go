@@ -9,10 +9,10 @@ import (
 	"bytes"
 	"errors"
 
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainec"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 	"github.com/decred/base58"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainec"
-	"github.com/decred/dcrd/chaincfg/chainhash"
 )
 
 // ErrMalformedPrivateKey describes an error where a WIF-encoded private

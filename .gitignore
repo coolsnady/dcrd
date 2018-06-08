@@ -2,7 +2,7 @@
 *~
 
 # Databases
-dcrd.db
+hxd2.db
 *-shm
 *-wal
 
@@ -33,7 +33,7 @@ _testmain.go
 
 # Binaries
 *.exe
-dcrd
+hxd2
 cmd/addblock/addblock
 cmd/checkdevpremine/checkdevpremine
 cmd/dcrctl/dcrctl

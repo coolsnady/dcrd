@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/dcrjson"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/dcrjson"
+	"github.com/hunjixin/hxd2/dcrutil"
 
 	flags "github.com/jessevdk/go-flags"
 )
@@ -30,13 +30,13 @@ const (
 )
 
 var (
-	dcrdHomeDir            = dcrutil.AppDataDir("dcrd", false)
+	hxd2HomeDir            = dcrutil.AppDataDir("hxd2", false)
 	dcrctlHomeDir          = dcrutil.AppDataDir("dcrctl", false)
 	dcrwalletHomeDir       = dcrutil.AppDataDir("dcrwallet", false)
 	defaultConfigFile      = filepath.Join(dcrctlHomeDir, "dcrctl.conf")
 	defaultRPCServer       = "localhost"
 	defaultWalletRPCServer = "localhost"
-	defaultRPCCertFile     = filepath.Join(dcrdHomeDir, "rpc.cert")
+	defaultRPCCertFile     = filepath.Join(hxd2HomeDir, "rpc.cert")
 	defaultWalletCertFile  = filepath.Join(dcrwalletHomeDir, "rpc.cert")
 )
 
@@ -341,23 +341,23 @@ func loadConfig() (*config, []string, error) {
 }
 
 // createDefaultConfig creates a basic config file at the given destination path.
-// For this it tries to read the dcrd config file at its default path, and extract
+// For this it tries to read the hxd2 config file at its default path, and extract
 // the RPC user and password from it.
 func createDefaultConfigFile(destinationPath string) error {
-	// Nothing to do when there is no existing dcrd conf file at the default
+	// Nothing to do when there is no existing hxd2 conf file at the default
 	// path to extract the details from.
-	dcrdConfigPath := filepath.Join(dcrdHomeDir, "dcrd.conf")
-	if !fileExists(dcrdConfigPath) {
+	hxd2ConfigPath := filepath.Join(hxd2HomeDir, "hxd2.conf")
+	if !fileExists(hxd2ConfigPath) {
 		return nil
 	}
 
-	// Read dcrd.conf from its default path
-	dcrdConfigFile, err := os.Open(dcrdConfigPath)
+	// Read hxd2.conf from its default path
+	hxd2ConfigFile, err := os.Open(hxd2ConfigPath)
 	if err != nil {
 		return err
 	}
-	defer dcrdConfigFile.Close()
-	content, err := ioutil.ReadAll(dcrdConfigFile)
+	defer hxd2ConfigFile.Close()
+	content, err := ioutil.ReadAll(hxd2ConfigFile)
 	if err != nil {
 		return err
 	}

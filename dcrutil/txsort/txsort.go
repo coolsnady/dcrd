@@ -9,8 +9,8 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // sortableInputSlice implements sort.Interface to allow a slice of transaction

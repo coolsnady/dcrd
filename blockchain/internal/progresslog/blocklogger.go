@@ -11,8 +11,8 @@ import (
 
 	"github.com/decred/slog"
 
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/dcrutil"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // BlockProgressLogger provides periodic logging for other services in order

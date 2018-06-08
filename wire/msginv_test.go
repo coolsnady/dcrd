@@ -12,7 +12,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 // TestInv tests the MsgInv API.

@@ -1,4 +1,4 @@
-#decred-golang-builder-1.9
+#hunjixin-golang-builder-1.9
 # This image may be called with the run_tests.sh script included in any of the
 # supported go repos.
 # ./run_tests.sh 1.9
@@ -28,10 +28,10 @@ RUN mkdir /release && \
 # create directory to get source from
 RUN mkdir /src && \
     chown $USER /src && \
-    mkdir -p /go/src/github.com/decred/dcrd && \
-    mkdir -p /go/src/github.com/decred/dcrwallet && \
-    mkdir -p /go/src/github.com/decred/dcrctl && \
-    mkdir -p /go/src/github.com/decred/dcrrpcclient && \
+    mkdir -p /go/src/github.com/hunjixin/hxd2 && \
+    mkdir -p /go/src/github.com/hunjixin/dcrwallet && \
+    mkdir -p /go/src/github.com/hunjixin/dcrctl && \
+    mkdir -p /go/src/github.com/hunjixin/dcrrpcclient && \
     chown -R $USER /go/src
 
 # switch user

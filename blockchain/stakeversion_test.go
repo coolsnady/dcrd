@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/chaincfg"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
 )
 
 func TestCalcWantHeight(t *testing.T) {

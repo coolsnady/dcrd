@@ -12,9 +12,9 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hunjixin/hxd2/blockchain"
+	"github.com/hunjixin/hxd2/database"
+	"github.com/hunjixin/hxd2/dcrutil"
 )
 
 var (

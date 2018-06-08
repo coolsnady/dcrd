@@ -1,4 +1,4 @@
-module github.com/decred/dcrd
+module github.com/hunjixin/hxd2
 
 require (
 	github.com/aead/siphash v0.0.0-20170329201724-e404fcfc8885

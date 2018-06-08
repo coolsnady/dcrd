@@ -1,3 +1,3 @@
-module github.com/decred/dcrd/blockchain
+module github.com/hunjixin/hxd2/blockchain
 
-require github.com/decred/dcrd v1.3.0
+require github.com/hunjixin/hxd2 v1.3.0

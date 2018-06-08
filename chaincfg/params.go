@@ -13,8 +13,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/hunjixin/hxd2/chaincfg/chainhash"
+	"github.com/hunjixin/hxd2/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -474,9 +474,9 @@ var MainNetParams = Params{
 	Net:         wire.MainNet,
 	DefaultPort: "9108",
 	DNSSeeds: []DNSSeed{
-		{"mainnet-seed.decred.mindcry.org", true},
-		{"mainnet-seed.decred.netpurgatory.com", true},
-		{"mainnet-seed.decred.org", true},
+		{"mainnet-seed.hunjixin.mindcry.org", true},
+		{"mainnet-seed.hunjixin.netpurgatory.com", true},
+		{"mainnet-seed.hunjixin.org", true},
 	},
 
 	// Chain parameters
@@ -684,9 +684,9 @@ var TestNet2Params = Params{
 	Net:         wire.TestNet2,
 	DefaultPort: "19108",
 	DNSSeeds: []DNSSeed{
-		{"testnet-seed.decred.mindcry.org", true},
-		{"testnet-seed.decred.netpurgatory.com", true},
-		{"testnet-seed.decred.org", true},
+		{"testnet-seed.hunjixin.mindcry.org", true},
+		{"testnet-seed.hunjixin.netpurgatory.com", true},
+		{"testnet-seed.hunjixin.org", true},
 	},
 
 	// Chain parameters

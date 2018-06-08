@@ -1,6 +1,6 @@
-module github.com/decred/dcrd/addrmgr
+module github.com/hunjixin/hxd2/addrmgr
 
 require (
-	github.com/decred/dcrd/wire v1.0.0
+	github.com/hunjixin/hxd2/wire v1.0.0
 	github.com/decred/slog v1.0.0
 )
